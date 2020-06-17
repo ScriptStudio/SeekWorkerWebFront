@@ -1,0 +1,215 @@
+@import "core/requires";
+@import "components/requires";
+
+
+.navbar__logo {
+	@extend .navbar;
+	@extend .#{$pri-color};
+	@extend %flexr-hb-vc-container;
+	@extend .navbar-dark;
+	@extend .navbar-expand ;
+	@extend .py-1;
+
+	.navbar-brand {
+		@extend .py-0;
+
+		img { // Logo
+			max-height: 2.5rem;
+			max-width: 2.5rem;
+			height: auto;
+			width: auto;
+		}
+	}
+
+	.navbar-nav {
+		@extend %flexr-vc-container;
+
+		.nav-item .dropdown{
+
+			.dropdown-menu__profile {
+				@extend .p-0; 
+				@extend .mt-0;
+				@extend .border;
+				@extend .border-secondary;
+				@extend .dropdown-menu-right;
+
+				.dropdown-header {
+					@extend %flexc-full-center_container;
+					@extend .bg-dark;
+
+					img { // Avatar in menu profile
+						width: 2.8rem; height: 2.8rem;
+					}
+
+					.dropdown-header__username, 
+					.dropdown-header__role, 
+					.dropdown-header__company-name, 
+					.dropdown-header__company-icon{
+						color: $sec-color;
+					}
+
+					.dropdown-header__username { 
+						@extend .h6, .pt-1;
+						margin-bottom: 0rem;
+					}
+
+					.dropdown-header__role, .dropdown-header__company-name { 
+						@extend .small, .h6;
+					}
+
+					.dropdown-header__company-icon {
+						@extend .far, .fa-building, .mt-2;
+						font-size: large;
+					}
+				}
+
+				.dropdown-item {
+					@extend %flexr-vc-container;
+
+					.profile-menuicons {
+						font-family: Icons;
+						font-size: 1rem;
+						@extend .font-weight-bold, .mr-2;
+					}
+
+					.profile-menutext {
+						font-size: 0.9rem;
+					}
+				}
+			}
+
+			.nav-link { 
+				@extend .py-0; 
+	
+				img { //Avatar
+					height: 30px;
+					border: none;
+					@extend .rounded-circle;
+				}
+	
+				.alerts-icon { 
+					@extend .fas, .fa-inbox; //Font awesome solid inbox icon
+					font-size: 1.1rem;
+				}
+			}
+		} 
+	}
+}
+
+.navbar__main-menu {
+	@extend .navbar, .navbar-light, .navbar-expand-lg;
+	background-color: $sec-color;
+
+	.navbar-collapse {
+		@extend .align-items-center;
+		@extend .justify-content-center;
+	
+		.navbar-nav .nav-item {
+			@extend .px-lg-2;
+
+			.nav-link, .dropdown .nav-link {
+				@extend %flexr-vc-container; 
+				@extend .py-lg-0;
+			}
+
+			.nav-link {
+
+				@extend .text-dark;
+
+				.dashboard__icon {
+					@extend .fas, .fa-chart-pie, %main-menu-item;
+				}
+
+				.clients__icon {
+					@extend .fas, .fa-address-book, %main-menu-item;
+				}
+			}
+
+			.dropdown {
+
+				.nav-link {
+					.collaborators__icon {
+						@extend .fas, .fa-id-card-alt, %main-menu-item;
+					}
+	
+					.assets__icon {
+						@extend .fas, .fa-box-open, %main-menu-item;
+					}
+	
+					.menage__icon {
+						@extend .fas, .fa-toolbox, %main-menu-item;
+					}
+	
+					.visits__icon {
+						@extend .fas, .fa-shipping-fast, %main-menu-item;
+					}
+				}
+
+				.dropdown-menu {
+
+					background-color: $sec-color;
+
+					.dropdown-item .employee__icon {
+						@extend .fas, .fa-users; 
+						width: $menus-width-icon;
+					}
+
+					.dropdown-item .profile__icon {
+						@extend .far, .fa-id-card; 
+						width: $menus-width-icon;
+					}
+
+					.dropdown-item .scale-dayoff__icon {
+						@extend .far, .fa-calendar-alt; 
+						width: $menus-width-icon;
+					}
+
+					.dropdown-item .point-sheet__icon {
+						@extend .far, .fa-clock;
+						width: $menus-width-icon;
+					}
+
+					.dropdown-item .fleet__icon {
+						@extend .fas, .fa-car-side;
+						width: $menus-width-icon;
+					}
+
+					.dropdown-item .warehouse__icon {
+						@extend .fas, .fa-dolly;
+						width: $menus-width-icon;
+					}
+
+					.dropdown-item .expense__icon {
+						@extend .fas, .fa-dollar-sign;
+						width: $menus-width-icon;
+					}
+
+					.dropdown-item .advanced-money__icon {
+						@extend .fas, .fa-hand-holding-usd;
+						width: $menus-width-icon;
+					}
+
+					.dropdown-item .fuel__icon {
+						@extend .fas, .fa-gas-pump;
+						width: $menus-width-icon;
+					}
+
+					.dropdown-item .adjusts__icon {
+						@extend .fas, .fa-sliders-h;
+						width: $menus-width-icon;
+					}
+
+					.dropdown-item .calls-tasks__icon {
+						@extend .fas, .fa-tasks;
+						width: $menus-width-icon;
+					}
+
+					.dropdown-item .service-order__icon {
+						@extend .fas, .fa-file-contract;
+						width: $menus-width-icon;
+					}
+				}
+			} 
+		}
+	}
+}
