@@ -1,6 +1,6 @@
 {
     "compilerOptions": {
-        "outDir": "./build/temp",
+        //"outDir": "./build/temp",
         "noImplicitAny": true,
         "removeComments": true,
         "noEmitOnError": true,

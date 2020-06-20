@@ -3,8 +3,8 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
 
-const SRSTY = "./src/styles/";
-const SRJS = "./src/scripts/";
+const SRSTY = "./src/sass/";
+const SRJS = "./src/ts/";
 
 const IS_IN_PROD = false;
 
@@ -65,8 +65,9 @@ module.exports =
         }),
         new CopyPlugin({
             patterns: [
-              { from: './src/html/main.html'},
-            ],
+              { from: './src/html/*', to: '[name].html' },
+              { from: './src/images', to: 'images/' }
+            ]
         }),
     ],
 
