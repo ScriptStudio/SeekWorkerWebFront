@@ -1,0 +1,19 @@
+.toolbar-header__main {
+    display: flex;
+    align-items: center;
+    max-height: 3rem;
+
+    //@extend .mat-elevation-z4;
+
+    span a {
+        display: flex;
+        align-items: center;
+
+        .logo {
+            max-height: 5rem;
+            max-width: 10rem;
+            height: auto;
+            width: auto;
+        }
+    }
+}

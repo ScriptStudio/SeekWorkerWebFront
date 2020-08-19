@@ -1,0 +1,25 @@
+.toolbar-footer__main {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    max-height: 2rem;
+    position: fixed;
+    bottom: 0;
+
+    .text-footer{
+        font-size: 0.8rem;
+        font-weight: 300;
+        margin-right: 0.8rem;
+    }
+    span a {
+        display: flex;
+        align-items: center;
+
+        .logo-developer {
+            max-height: 3rem;
+            max-width: 8rem;
+            height: auto;
+            width: auto;
+        }
+    }
+}

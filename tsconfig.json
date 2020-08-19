@@ -1,15 +1,17 @@
+/*
+  This is a "Solution Style" tsconfig.json file, and is used by editors and TypeScript’s language server to improve development experience.
+  It is not intended to be used to perform a compilation.
+
+  To learn more about this file see: https://angular.io/config/solution-tsconfig.
+*/
 {
-    "compilerOptions": {
-        //"outDir": "./build/temp",
-        "noImplicitAny": true,
-        "removeComments": true,
-        "noEmitOnError": true,
-        "module": "es2020",
-        "target": "ES2020",
-        "jsx": "react",
-        "allowJs": true,
-        "sourceMap": true,
-        "noUnusedParameters": true,
-        "noUnusedLocals": true
+  "files": [],
+  "references": [
+    {
+      "path": "./tsconfig.app.json"
+    },
+    {
+      "path": "./tsconfig.spec.json"
     }
+]
 }
