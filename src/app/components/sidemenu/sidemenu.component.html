@@ -1,1 +1,56 @@
-<p>sidemenu works!</p>
+<mat-drawer-container class="sidemenu-container" autosize>
+  <mat-drawer #drawer class="sidemenu-drawer" mode="side" [class.mat-elevation-z8]=true>
+
+    <mat-selection-list [multiple]="false">
+      <mat-list-option>Dashboard</mat-list-option>
+      <mat-list-option>Clientes</mat-list-option>
+      <mat-list-option>
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              Item3
+            </mat-panel-title>
+            <mat-panel-description>
+              This is a summary of the content
+            </mat-panel-description>
+          </mat-expansion-panel-header>
+          <p>This is the primary content of the panel.</p>
+        </mat-expansion-panel>
+      </mat-list-option>
+
+    </mat-selection-list>
+
+    <!-- <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            Dashboard
+          </mat-panel-title>
+          <mat-panel-description>
+            This is a summary of the content
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+        <p>This is the primary content of the panel.</p>
+      </mat-expansion-panel>
+
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            Self aware panel
+          </mat-panel-title>
+          <mat-panel-description>
+            Currently I am
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+        <p>I'm visible because I am open</p>
+      </mat-expansion-panel> -->
+  </mat-drawer>
+
+  <div class="sidemenu-content">
+    <p>É um facto estabelecido de que um leitor é distraído pelo conteúdo legível de uma página quando analisa a sua
+      mancha gráfica. Logo, o uso de Lorem Ipsum leva a uma distribuição mais ou menos normal de letras, ao contrário do
+      uso de "Conteúdo aqui, conteúdo aqui", tornando-o texto legível. Muitas ferramentas de publicação electrónica e
+      editores de páginas web usam actualmente o Lorem Ipsum como o modelo de texto usado por omissão, e uma pesquisa
+      por "lorem ipsum" irá encontrar muitos websites ainda na sua infância. Várias versões têm evoluído ao longo dos
+      anos, por vezes por acidente, por vezes propositadamente (como no caso do humor).</p>
+  </div>
+</mat-drawer-container>

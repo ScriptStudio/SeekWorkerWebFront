@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SidemenuService } from '../sidemenu/sidemenu.service';
 
 @Component({
   selector: 'app-header',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  constructor(private sideMenuService: SidemenuService) { }
 
   ngOnInit(): void {
   }
 
+  /**
+   * toggleSideMenu Abre/Fecha o menu lateral
+   */
+  toggleSideMenu() {
+    this.sideMenuService.toggle();
+  }
 }
