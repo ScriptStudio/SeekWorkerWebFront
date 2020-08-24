@@ -2,16 +2,24 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-height: 2.7rem;
+    //max-height: 2.7rem;
+    background: #343a40;//#1e88e5;
 
-    .span-header-logo a {
+    .logo-and-hamburger {
         display: flex;
         align-items: center;
-        .logo {
-            max-height: 5rem;
-            max-width: 10rem;
-            height: auto;
-            width: auto;
+
+        .span-header-logo a {
+            display: flex;
+            align-items: center;
+            margin-right: .5rem;
+            .logo {
+                max-height: 5rem;
+                max-width: 10rem;
+                height: auto;
+                width: auto;
+            }
         }
     }
+
 }

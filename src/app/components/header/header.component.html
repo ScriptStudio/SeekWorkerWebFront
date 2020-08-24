@@ -1,12 +1,17 @@
 <mat-toolbar class="toolbar-header" [class.mat-elevation-z4] = true color="primary">
-    <span class="span-sidemenu-btn">
-        <button mat-icon-button (click)="toggleSideMenu()">
-            <mat-icon>menu</mat-icon>
-        </button>
-    </span>
-    <span class="span-header-logo">
-        <a>
-            <img class="logo" src="assets/img/seekworker.png" alt="Logo">
-        </a>
-    </span>
+    <div class="logo-and-hamburger">
+
+        <span class="span-header-logo">
+            <a>
+                <img class="logo" src="assets/img/seekworker.png" alt="Logo">
+            </a>
+        </span>
+    
+        <span>
+            <button mat-icon-button (click)="toggleSideMenu()">
+                <mat-icon>menu</mat-icon>
+            </button>
+        </span>
+    </div>
+
 </mat-toolbar>

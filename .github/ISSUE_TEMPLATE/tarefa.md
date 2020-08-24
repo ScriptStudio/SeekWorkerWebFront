@@ -17,5 +17,5 @@ Faça isso escrevendo, Dependência: #número_da_issue.
 **Relacionada a..**
 Caso a tarefa esteja relacionada a uma sugestão ou bug informe o número da Issue aqui. Ex: #numero_da_issue.
 
-**Urgencia**
+**Urgência**
 Use a escala de 1 a 5 para informar a urgência da tarefa.
