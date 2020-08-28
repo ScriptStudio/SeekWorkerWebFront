@@ -1,5 +1,5 @@
-<mat-drawer-container class="sidemenu-container" autosize [class.mat-elevation-z8]=true>
-  <mat-drawer class="sidemenu-drawer" #drawer mode="side">
+<mat-sidenav-container class="sidemenu-container" autosize>
+  <mat-sidenav class="sidemenu-drawer" #drawer [mode]="sideMenuMode()" [class.mat-elevation-z8]=true>
 
     <mat-nav-list>
 
@@ -149,6 +149,10 @@
       </mat-accordion>
     </mat-nav-list>
 
-  </mat-drawer>
+  </mat-sidenav>
 
-</mat-drawer-container>
+  <div class="central-area">
+    <h2>Conteúdo do meio</h2>
+  </div>
+
+</mat-sidenav-container>
